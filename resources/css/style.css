@@ -30,6 +30,10 @@
   color: #f65a5b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgba(255, 255, 255, 0.773);
   font-family: 'Teko', sans-serif;
@@ -386,4 +390,31 @@ a.btn:hover::before {
 .ico:hover {
   background-color: #f65a5b;
   color: #001727;
+}
+
+
+@media only screen and (max-width: 1050px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+  .text {
+    flex-basis: 100%;
+  }
+  .img {
+    flex-basis: 50%;
+  }
+  .text h1 {
+    font-size: 3rem;
+  }
+  .projects_wrapper {
+    height: 1400px;
+  }
+  .box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .item {
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
 }
