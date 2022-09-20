@@ -317,8 +317,16 @@ a.btn:hover::before {
 }
 
 .item {
+  padding: 2em;
   flex: 0 1 30%;
   text-align: center;
+  transition: 0.8s all;
+  border-radius: 20px;
+}
+
+.item:hover {
+  background-color: #f65a5b;
+  color: #fff;
 }
 
 .item a img {
