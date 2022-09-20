@@ -57,10 +57,11 @@ header {
   background-color: #204056;
   width: 105px;
   position: fixed;
-  right: -80px;
+  right: -98px;
   transition: all 0.5s linear;
   z-index: 1;
   border-radius: 25px 0 0 25px;
+  padding-left: 0.8em;
 }
 
 .show {
@@ -68,6 +69,7 @@ header {
 }
 
 header nav ul {
+  font-size: 1.5rem;
   padding: 2em 0;
   list-style: none;
   display: flex;
@@ -76,7 +78,17 @@ header nav ul {
   justify-content: space-around;
   height: 90vh;
   position: relative;
-  /* align-content: space-around */
+}
+
+header nav ul li a {
+  width: 100%;
+  padding: 1em;
+  transition: all 0.7s linear;
+}
+
+header nav ul li a:hover {
+  background-color: #f65a5b;
+  text-decoration: underline;
 }
 
 .open_nav {
@@ -84,7 +96,7 @@ header nav ul {
   height: 40px;
   background-color: #f65a5b;
   position: relative;
-  left: -10px;
+  left: -35px;
   top: 350px;
   display: flex;
   z-index: 1111;
@@ -109,19 +121,38 @@ header nav ul {
 
 .text {
   flex-basis: 50%;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
 }
 
 .text h1 {
   margin-bottom: 0.2em;
+  position: relative;
+}
+
+.text h1::before {
+  content: attr(title);
+  position: absolute;
+  z-index: -1;
+  top: -24%;
+  left: 1%;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #084671;
+  letter-spacing: 5px;
 }
 
 .text p {
-  margin-bottom: 1.3em;
+  text-indent: 3px;
+  margin-bottom: 0.8em;
 }
 
 a.btn {
+  font-size: 1.5rem;
   background-color: #204056;
   color: #fff;
   padding: 0.3em 0.7em;
@@ -150,6 +181,7 @@ a.btn::before {
 
 a.btn:hover {
   color: #001727;
+  border: 2px solid transparent;
 
 }
 
@@ -160,6 +192,7 @@ a.btn:hover::before {
 
 .unique-text {
   color: #f65a5b;
+  font-weight: bold;
 }
 
 .animate__animated.animate__fadeInLeft {
