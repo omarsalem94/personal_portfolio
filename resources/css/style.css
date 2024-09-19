@@ -420,6 +420,25 @@ a.btn:hover::before {
 }
 
 
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .projects_wrapper {
+    height: auto;
+  }
+  
+  .box {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .item {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 1050px) {
   .hero {
     flex-wrap: wrap;
@@ -434,14 +453,15 @@ a.btn:hover::before {
     font-size: 3rem;
   }
   .projects_wrapper {
-    height: 1400px;
+    height: auto;
   }
   .box {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
   .item {
-    flex-basis: 50%;
+    flex-basis: 45%;
     flex-shrink: 0;
+    margin-bottom: 20px;
   }
 }
