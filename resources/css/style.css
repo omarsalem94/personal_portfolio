@@ -1,4 +1,4 @@
-/* General reset */
+/* Reset styles */
 *,
 *::before,
 *::after {
@@ -19,6 +19,7 @@ html {
 body {
   color: rgba(255, 255, 255, 0.773);
   font-family: 'Teko', sans-serif;
+  background-color: #001727;
 }
 
 h1, h2, h3 {
@@ -36,6 +37,7 @@ a {
   text-decoration: none;
 }
 
+/* Header Styles */
 header {
   background-color: #204056;
   width: 105px;
@@ -86,6 +88,7 @@ header nav ul li a:hover {
   z-index: 1111;
 }
 
+/* Hero Section */
 .hero_wrapper {
   background-color: #001727;
   height: 600px;
@@ -124,7 +127,9 @@ header nav ul li a:hover {
   position: relative;
 }
 
+/* Projects Section */
 .projects_wrapper {
+  background-color: #fff;
   color: #001727;
   padding: 3em 1em;
 }
@@ -160,11 +165,6 @@ header nav ul li a:hover {
   position: relative;
 }
 
-.item:hover {
-  background-color: #f65a5b;
-  color: white;
-}
-
 .item img {
   width: 100%;
   height: auto;
@@ -193,7 +193,11 @@ header nav ul li a:hover {
   height: 180%;
 }
 
-/* Contact Section Styles */
+.item:hover {
+  color: white;
+}
+
+/* Contact Section */
 .contact {
   background-color: #001727;
   color: #fff;
@@ -240,8 +244,17 @@ header nav ul li a:hover {
   background-color: #204056;
 }
 
-/* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
+/* Footer Section */
+footer {
+  background-color: #001727;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -262,10 +275,6 @@ header nav ul li a:hover {
 
   .item {
     flex-basis: 100%;
-  }
-
-  .projects_wrapper .title {
-    font-size: 1.6rem;
   }
 
   .contact h2 {
