@@ -193,6 +193,53 @@ header nav ul li a:hover {
   height: 180%;
 }
 
+/* Contact Section Styles */
+.contact {
+  background-color: #001727;
+  color: #fff;
+  padding: 4em 1em;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 1em 2em;
+  background-color: #f65a5b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #204056;
+}
+
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
   .hero {
@@ -219,5 +266,13 @@ header nav ul li a:hover {
 
   .projects_wrapper .title {
     font-size: 1.6rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 1rem;
   }
 }
